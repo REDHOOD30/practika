@@ -23,7 +23,8 @@ export default defineConfig([
       'react/require-default-props': 'off',
       'react/react-in-jsx-scope': 'off',
       "i18next/no-literal-string": ['error', { markupOnly: true }],
-      '@typescript-eslint/no-unsafe-assignment': 'off'
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      'max-len': ['error', { "ignoreComments": true }],
     },
   },
 ]);
