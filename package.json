@@ -13,7 +13,8 @@
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
     "unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "postinstall": "patch-package"
   },
   "keywords": [],
   "author": "",
@@ -62,8 +63,11 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.3",
     "jest-environment-jsdom": "^30.0.2",
+    "loki": "^0.35.1",
     "mini-css-extract-plugin": "^2.9.2",
+    "patch-package": "^8.0.0",
     "playwright": "^1.53.1",
+    "postinstall-postinstall": "^2.1.0",
     "react-test-renderer": "^19.1.0",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5",
@@ -86,9 +90,24 @@
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",
     "next": "^15.3.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-i18next": "^15.5.3",
     "react-router-dom": "^7.6.2"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.docker",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
