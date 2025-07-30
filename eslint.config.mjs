@@ -24,6 +24,7 @@ export default defineConfig([
       'react/react-in-jsx-scope': 'off',
       "i18next/no-literal-string": ['error', { markupOnly: true, ignoreAttributes: ['data-testid'] }],
       '@typescript-eslint/no-unsafe-assignment': 'off',
+      "@typescript-eslint/no-unused-vars": "off",
       'max-len': ['error', { "ignoreComments": true, code: 200 }],
     },
   },
