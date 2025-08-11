@@ -9,7 +9,7 @@ import {RoutePath} from "shared/config/routerConfig/routeConfig";
 import AboutIcon from 'shared/assets/icons/about-20-20.svg';
 import MainIcon from 'shared/assets/icons/main-20-20.svg';
 import cls from './Sidebar.module.scss';
-
+//
 interface SidebarProps {
     className?: string;
 }
